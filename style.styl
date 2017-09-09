@@ -3,41 +3,51 @@
 .border
    border: 1px solid #000;
 
+body
+    font-family: 'Lato', sans-serif;
+
 header
-   .logo-bar
-      background: #0099FF;
-      padding: 5px;
-      img
-         height: 40px;
-         width: 150px;
-         margin: 0 auto;
-         display: block;
-         transition: all ease 0.3s;
-         &:hover
-            -ms-transform: scale(.9);
-            transform: scale(.9);
+    padding: 5px 20px;
+    background: #0099FF;
+    .logo-bar
+        img
+            height: 40px;
+            width: 150px;
+            margin: 0 auto;
+            display: block;
+            transition: all ease 0.3s;
+            &:hover
+                -ms-transform: scale(.9);
+                transform: scale(.9);
     .search
         height: 40px;
         position: relative;
         input
             width: 100%;
+            max-width: 240px;
             border-radius: 50px;
-            border: 2px solid rgba(255, 255, 255, 0)
+            border: 2px solid rgba(255, 255, 255, 0);
             background: none;
             height: 40px;
-            padding: 7px 7px 7px 35px;
+            padding: 7px 7px 7px 40px;
             color: #fff;
             transition: all ease 0.3s;
-            // &::-webkit-input-placeholder
-            // &::-moz-input-placeholder
-            //     color: none;
+            position: absolute;
+            &::-webkit-input-placeholder
+                color: rgba(255, 255, 255, 80%);
+                font-weight: bold;
             &:hover
-            &:focus
                 border: 2px solid rgba(255, 255, 255, 50%);
-            // &::-webkit-placeholder
-                // color: #fff;
+            &:focus
+                border: 2px solid rgba(255, 255, 255, 100%);
+                background: #fff;
+                outline: 0;
+                box-shadow: 0 5px 10px rgba(0,0,0,.3);
+                & ~ i.glyphicon
+                    color: #ccc;
         i.glyphicon
             position: absolute;
             color: #fff;
-            padding: 10px 0 0 15px;
+            margin: 13px 0 0 15px;
+            font-size: 12px;
 

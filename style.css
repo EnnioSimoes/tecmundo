@@ -2,9 +2,12 @@
 .border {
   border: 1px solid #000;
 }
-header .logo-bar {
+body {
+  font-family: 'Lato', sans-serif;
+}
+header {
+  padding: 5px 20px;
   background: #09f;
-  padding: 5px;
 }
 header .logo-bar img {
   height: 40px;
@@ -23,20 +26,35 @@ header .search {
 }
 header .search input {
   width: 100%;
+  max-width: 240px;
   border-radius: 50px;
   border: 2px solid rgba(255,255,255,0);
   background: none;
   height: 40px;
-  padding: 7px 7px 7px 35px;
+  padding: 7px 7px 7px 40px;
   color: #fff;
   transition: all ease 0.3s;
+  position: absolute;
 }
-header .search input:hover,
-header .search input:focus {
+header .search input::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.8);
+  font-weight: bold;
+}
+header .search input:hover {
   border: 2px solid rgba(255,255,255,0.5);
 }
-header .search input i.glyphicon {
+header .search input:focus {
+  border: 2px solid #fff;
+  background: #fff;
+  outline: 0;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+header .search input:focus ~ i.glyphicon {
+  color: #ccc;
+}
+header .search i.glyphicon {
   position: absolute;
   color: #fff;
-  padding: 10px 0 0 15px;
+  margin: 13px 0 0 15px;
+  font-size: 12px;
 }
