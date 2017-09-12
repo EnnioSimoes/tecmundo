@@ -6,9 +6,18 @@
 body
     font-family: 'Lato', sans-serif;
 
+.blue-theme
+    background: #0099FF;
+.theme-orange
+    background: #f70;
+.red-theme
+    background: #da0000;
+.green-theme
+    background: #00b300;
+.darkblue-theme
+    background: #06c;
 header
     padding: 5px 20px;
-    background: #0099FF;
     .logo-bar
         img
             height: 40px;
@@ -19,35 +28,57 @@ header
             &:hover
                 -ms-transform: scale(.9);
                 transform: scale(.9);
-    .search
-        height: 40px;
-        position: relative;
-        input
-            width: 100%;
-            max-width: 240px;
-            border-radius: 50px;
-            border: 2px solid rgba(255, 255, 255, 0);
-            background: none;
+        .search
             height: 40px;
-            padding: 7px 7px 7px 40px;
-            color: #fff;
-            transition: all ease 0.3s;
-            position: absolute;
-            &::-webkit-input-placeholder
-                color: rgba(255, 255, 255, 80%);
-                font-weight: bold;
-            &:hover
-                border: 2px solid rgba(255, 255, 255, 50%);
-            &:focus
-                border: 2px solid rgba(255, 255, 255, 100%);
-                background: #fff;
-                outline: 0;
-                box-shadow: 0 5px 10px rgba(0,0,0,.3);
-                & ~ i.glyphicon
-                    color: #ccc;
-        i.glyphicon
-            position: absolute;
-            color: #fff;
-            margin: 13px 0 0 15px;
-            font-size: 12px;
-
+            position: relative;
+            input
+                width: 100%;
+                max-width: 240px;
+                border-radius: 50px;
+                border: 2px solid rgba(255, 255, 255, 0);
+                background: none;
+                height: 40px;
+                padding: 7px 7px 7px 40px;
+                color: #fff;
+                transition: all ease 0.3s;
+                position: absolute;
+                &::-webkit-input-placeholder
+                    color: rgba(255, 255, 255, 80%);
+                    font-weight: bold;
+                &:hover
+                    border: 2px solid rgba(255, 255, 255, 50%);
+                &:focus
+                    border: 2px solid rgba(255, 255, 255, 100%);
+                    background: #fff;
+                    outline: 0;
+                    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+                    & ~ i.glyphicon
+                        color: #ccc;
+            i.glyphicon
+                position: absolute;
+                color: #fff;
+                margin: 13px 0 0 15px;
+                font-size: 12px;
+        ul.social
+            float: right;
+            margin: 0;
+            padding: 0;
+            li
+                list-style: none;
+                display: inline-block;
+                button
+                    width: 40px;
+                    height: 40px;
+                    background: none;
+                    border-radius: 100%;
+                    border: none;
+                    outline: 0;
+                    transition: all ease 0.3s;
+                    &:hover
+                        background: #33adff;
+                    span
+                        color: #fff;
+    // MENU BAR
+    .navbar
+        margin: 0 -20px;
+        border-top: 2px solid #33adff;

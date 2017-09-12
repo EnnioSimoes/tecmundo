@@ -5,9 +5,23 @@
 body {
   font-family: 'Lato', sans-serif;
 }
+.blue-theme {
+  background: #09f;
+}
+.theme-orange {
+  background: #f70;
+}
+.red-theme {
+  background: #da0000;
+}
+.green-theme {
+  background: #00b300;
+}
+.darkblue-theme {
+  background: #06c;
+}
 header {
   padding: 5px 20px;
-  background: #09f;
 }
 header .logo-bar img {
   height: 40px;
@@ -20,11 +34,11 @@ header .logo-bar img:hover {
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
-header .search {
+header .logo-bar .search {
   height: 40px;
   position: relative;
 }
-header .search input {
+header .logo-bar .search input {
   width: 100%;
   max-width: 240px;
   border-radius: 50px;
@@ -36,25 +50,53 @@ header .search input {
   transition: all ease 0.3s;
   position: absolute;
 }
-header .search input::-webkit-input-placeholder {
+header .logo-bar .search input::-webkit-input-placeholder {
   color: rgba(255,255,255,0.8);
   font-weight: bold;
 }
-header .search input:hover {
+header .logo-bar .search input:hover {
   border: 2px solid rgba(255,255,255,0.5);
 }
-header .search input:focus {
+header .logo-bar .search input:focus {
   border: 2px solid #fff;
   background: #fff;
   outline: 0;
   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
-header .search input:focus ~ i.glyphicon {
+header .logo-bar .search input:focus ~ i.glyphicon {
   color: #ccc;
 }
-header .search i.glyphicon {
+header .logo-bar .search i.glyphicon {
   position: absolute;
   color: #fff;
   margin: 13px 0 0 15px;
   font-size: 12px;
+}
+header .logo-bar ul.social {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+header .logo-bar ul.social li {
+  list-style: none;
+  display: inline-block;
+}
+header .logo-bar ul.social li button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border-radius: 100%;
+  border: none;
+  outline: 0;
+  transition: all ease 0.3s;
+}
+header .logo-bar ul.social li button:hover {
+  background: #33adff;
+}
+header .logo-bar ul.social li button span {
+  color: #fff;
+}
+header .navbar {
+  margin: 0 -20px;
+  border-top: 2px solid #33adff;
 }
