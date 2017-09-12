@@ -19,6 +19,7 @@ body
 header
     padding: 5px 20px;
     .logo-bar
+        padding-bottom: 4px;
         img
             height: 40px;
             width: 150px;
@@ -82,3 +83,20 @@ header
     .navbar
         margin: 0 -20px;
         border-top: 2px solid #33adff;
+        ul
+            float: none;
+            text-align: center;
+            margin-top: -2px;
+            li
+                float: none;
+                display: inline-block;
+                a
+                    color: #b3e0ff;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    padding: 15px 13px;
+                    border-top: 2px solid rgba(255, 255, 255, 0)
+                    &:hover
+                        background-color: transparent;
+                        border-top: 2px solid #fff;
+                        color: #fff;

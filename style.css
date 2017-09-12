@@ -23,6 +23,9 @@ body {
 header {
   padding: 5px 20px;
 }
+header .logo-bar {
+  padding-bottom: 4px;
+}
 header .logo-bar img {
   height: 40px;
   width: 150px;
@@ -99,4 +102,25 @@ header .logo-bar ul.social li button span {
 header .navbar {
   margin: 0 -20px;
   border-top: 2px solid #33adff;
+}
+header .navbar ul {
+  float: none;
+  text-align: center;
+  margin-top: -2px;
+}
+header .navbar ul li {
+  float: none;
+  display: inline-block;
+}
+header .navbar ul li a {
+  color: #b3e0ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 13px;
+  border-top: 2px solid rgba(255,255,255,0);
+}
+header .navbar ul li a:hover {
+  background-color: transparent;
+  border-top: 2px solid #fff;
+  color: #fff;
 }
